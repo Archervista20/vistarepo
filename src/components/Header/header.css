@@ -1,0 +1,38 @@
+.primary-header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    padding: 0 1.25em;
+}
+
+nav {
+    transform: translateX(100%);
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+
+.menu {
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 420px){
+    .primary-header {
+        background-color: pink;
+    }
+
+    nav {
+        position: fixed;
+        background-color: red;
+        top: 8vh;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        transform: translateX(0);
+    }
+}
